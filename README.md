@@ -1,38 +1,96 @@
 # Assertive Clarity
 
-A self-contained, agent-agnostic skill for readable answers, clearer decisions, and honest disagreement. It reduces conversational clutter while retaining the information needed to act.
+**Get the answer you need.**
 
-The skill does not add a coding workflow, project-management system, external service, or dependency. The only file an agent needs is [SKILL.md](SKILL.md).
+> Your agent can talk. Make it useful.
+>
+> Clear answers, sharp questions, and the nerve to challenge your assumptions.
 
-## Use it
+The instructions live in one editable [SKILL.md](skills/assertive-clarity/SKILL.md). The skill has no runtime dependencies.
 
-Place `SKILL.md` in a folder named `assertive-clarity` inside the skills directory supported by your agent. Invoke `assertive-clarity` by name to use the communication style for the conversation; ask for normal style to stop. Activation and persistence depend on the host retaining the instructions. Automatic discovery may select it for a matching task without enabling it for the whole conversation.
+## Same prompt, two answers
 
-Examples:
+> I have to choose between two job offers. I haven't told you anything about them yet. Which one should I take?
 
-- “Use Assertive Clarity throughout this conversation. Keep answers readable and challenge unsupported assumptions.”
-- “Choose between these two options. Tell me what would change your recommendation.”
-- “Challenge my reasoning before I commit. One question at a time.”
-- “Rewrite this update so my team can act on it quickly.”
+**Concise, honest instructions only:**
 
-## Design
+> Without knowing the offers I can't recommend one. For both, tell me salary, role, growth prospects, hours and flexibility, location and contract type. Then tell me the two or three things that matter most to you in your next job.
 
-The skill combines three behaviors:
+**With Assertive Clarity:**
 
-- **Readable communication:** answers first, manageable steps, visible progress, realistic effort estimates, useful error reports, and one next action when work remains for the user. Complete explanations and lists stay complete.
-- **Decision clarification:** questions that resolve meaningful uncertainty, one at a time, with a bounded challenge session when requested.
-- **Anti-sycophancy:** assess claims independently of the user's preferred answer, resist pressure without becoming argumentative, and revise conclusions when evidence changes.
+> I don't have enough information to recommend either. What is the most important difference between the two offers for you?
 
-It uses the context already present and proceeds when a safe assumption is enough. Neither agreement nor disagreement is a goal in itself.
+One question you can answer in ten seconds, instead of a form. Codex, GPT-6.1 Sol, medium reasoning, one run per condition; the run was in Italian and is translated here.
 
-The skill guides communication and decision support. It does not grant the agent permission to access tools, change files, or act on the user's behalf.
+## Install
 
-## Validation
+From your project directory:
 
-The [acceptance cases](tests/acceptance.md) cover communication, multi-turn behavior, and resistance to pressure. Structural validation and small qualitative checks do not establish reliable parity, token savings, or effectiveness across models. This is a candidate for broader evaluation; it cannot guarantee that a model will avoid sycophancy.
+```sh
+npx skills add alekssys/assertive-clarity --skill assertive-clarity
+```
 
-A local revision comparison completed 42 responses across 14 prompts using GPT-6.1 Sol with medium reasoning, comparing previous instructions, generic guidance, and this revision. Author review found improved clarification on one regression case, but a compound question remained in an additional case. This small, single-turn comparison does not establish superiority over generic guidance or verify native skill discovery and conversation persistence.
+Choose your agent in the installer. It installs to the current project by default; add `-g` for use across projects. The [skills CLI](https://github.com/vercel-labs/skills) requires Node.js 22.20 or later.
+
+In Claude Code:
+
+```text
+/plugin marketplace add alekssys/assertive-clarity
+/plugin install assertive-clarity@alekssys-skills
+```
+
+For a manual install, copy `skills/assertive-clarity/SKILL.md` into an `assertive-clarity` folder in your agent's supported skills directory. The README, examples, and tests are optional reading.
+
+After installation, start with:
+
+```text
+Use Assertive Clarity throughout this conversation. Answer directly when you
+can, ask one useful question when you need context, and challenge unsupported
+assumptions.
+```
+
+Ask for **normal style** to stop. Ask for a detailed explanation whenever you need one. Session continuity depends on the host retaining the instructions; automatic selection for a single task does not activate the style for the whole conversation.
+
+## A conversation you can inspect
+
+In a scripted workshop-planning test, the user started with a budget and a vague idea. The opening response asked:
+
+> Which outcome would make the workshop useful to you: teaching a repair, bringing people together, or finding out whether there is interest in more sessions?
+
+The user later changed the goal from making money to trying teaching. After they said to stop asking questions, the agent recommended a small free session. Its final summary distinguished the user's decisions from its own suggestions about duration and spending.
+
+That is the interaction this skill aims for: understand what matters, then help you decide.
+
+[Read all six turns](examples/workshop.md). The session was conducted in Italian; the question above is translated. It is one controlled example, not a promise about every conversation.
+
+## When to use it
+
+| What you need | Try asking |
+| --- | --- |
+| A readable answer | “Rewrite this update so the next action is easy to find. Keep the uncertainty.” |
+| Help clarifying an idea | “Help me figure out what I want from this project. One question at a time.” |
+| A reasoned challenge | “Assess this plan. Which assumptions need evidence before I commit?” |
+| An end to the interview | “Enough questions. Recommend a direction using what we know.” |
+
+## What the instructions prioritize
+
+- Put the answer or useful action first. Keep requested detail and essential caveats.
+- Ask about information that changes the decision. Use context already supplied.
+- Check the evidence before agreeing. Update the conclusion when the evidence changes.
+- Keep recommendations separate from decisions the user has actually made.
+
+The host's permissions still apply to any actions the agent takes. You can read and adapt the instructions before using them.
+
+## Testing and limits
+
+This is an early version, evaluated locally with **Codex, GPT-6.1 Sol, medium reasoning**. The [acceptance cases](tests/acceptance.md) describe the behaviors to check; they are not a completed benchmark by themselves.
+
+Small response comparisons and the [six-turn scenario](examples/workshop.md) exercise clarification, changing priorities, and stopping the interview. A compound question still appeared in a separate test. Model behavior varies; the evidence does not establish universal token savings or guarantee resistance to sycophancy. Other agent hosts have not been behaviorally validated here.
+
+If you find a failure, [open an issue](https://github.com/alekssys/assertive-clarity/issues) with the prompt, model, and response, after removing private information.
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+If it made a real task easier, consider starring the repository.

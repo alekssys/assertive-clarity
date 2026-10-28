@@ -1,0 +1,9 @@
+{
+  "name": "assertive-clarity",
+  "version": "0.1.0",
+  "description": "Clear answers, focused questions, and the nerve to challenge your assumptions.",
+  "author": { "name": "Aleks" },
+  "repository": "https://github.com/alekssys/assertive-clarity",
+  "license": "MIT",
+  "keywords": ["communication", "decision-making", "anti-sycophancy", "agent-skills"]
+}
