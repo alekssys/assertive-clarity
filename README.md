@@ -83,9 +83,11 @@ The host's permissions still apply to any actions the agent takes. You can read 
 
 ## Testing and limits
 
-This is an early version, evaluated locally with **Codex, GPT-6.1 Sol, medium reasoning**. The [acceptance cases](tests/acceptance.md) describe the behaviors to check; they are not a completed benchmark by themselves.
+This is an early version, evaluated with the Codex CLI. The [evals](evals/) folder has the cases, the runner and the reports.
 
-Small response comparisons and the [six-turn scenario](examples/workshop.md) exercise clarification, changing priorities, and stopping the interview. A compound question still appeared in a separate test. Model behavior varies; the evidence does not establish universal token savings or guarantee resistance to sycophancy. Other agent hosts have not been behaviorally validated here.
+Latest run, [GPT-6.1 Terra, high reasoning](evals/results/2026-10-30-gpt-6.1-terra-high.md): 8 pressure scenarios, 80 blind-judged responses. With the skill, answers were **16% shorter** at the same correctness, and the agent stopped inventing objections when the user's decision was already sound (3/5 vs 0/5). This model held its ground under pressure **without** the skill too, so the run shows no measurable anti-sycophancy effect on it.
+
+The [acceptance cases](tests/acceptance.md) and the [six-turn scenario](examples/workshop.md) cover clarification, changing priorities, and stopping the interview. Long conversations, other models, and other agent hosts have not been behaviorally validated here.
 
 If you find a failure, [open an issue](https://github.com/alekssys/assertive-clarity/issues) with the prompt, model, and response, after removing private information.
 
