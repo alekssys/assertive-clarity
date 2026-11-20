@@ -1,83 +1,83 @@
 # A workshop decision, across six turns
 
-This is the complete Italian transcript from one controlled conversation conducted on October 16, 2026, using Codex with GPT-6.1 Sol and medium reasoning. The user messages were scripted before the run and delivered one at a time. The agent did not see future turns or evaluation criteria. Its replies below are recorded outputs, not illustrative rewrites.
+This is the complete transcript of one controlled conversation conducted on October 16, 2026, using Codex with GPT-6.1 Sol and medium reasoning. The conversation took place in Italian; the text below is an English translation of the recorded messages and replies. The user messages were scripted before the run and delivered one at a time. The agent did not see future turns or evaluation criteria. Its replies below are recorded outputs, not illustrative rewrites.
 
 The conversation used one native Codex session, resumed by its exact ID. The same skill instructions were supplied at each turn. This tests use of conversation history, not native skill discovery or retention of the skill without reinjection. Tools were disabled. The scenario concerns a hypothetical workshop; no bookings or purchases took place.
 
 The test checks whether the agent tracks constraints, adapts when the goal changes, distinguishes interest from confirmed attendance, and stops questioning when asked. The final summary separates decisions from suggestions. A possible weakness appears in turn 3: it introduces an individual teaching rehearsal that may not be needed.
 
-One conversation cannot establish reliability or token savings. The original language is preserved so readers can inspect the exact responses. Return to the [README](../README.md) for installation.
+One conversation cannot establish reliability or token savings. Wording, and therefore small details of tone, may differ from the Italian original. Return to the [README](../README.md) for installation.
 
-## Turno 1
+## Turn 1
 
-**Utente:** Ho un'idea vaga: organizzare un piccolo workshop di riparazione dei vestiti. Aiutami a capire se vale la pena farlo, con domande prima di decidere. Ho al massimo 300 euro e due settimane. Non prenotare o comprare nulla.
+**User:** I have a vague idea: organizing a small clothing-repair workshop. Help me work out whether it's worth doing, with questions before deciding. I have at most 300 euros and two weeks. Don't book or buy anything.
 
-**Assistente:**
+**Assistant:**
 
-Quale risultato renderebbe il workshop utile per te: insegnare a riparare un capo, far incontrare persone o capire se c’è interesse per altri incontri?
+Which outcome would make the workshop useful to you: teaching a repair, bringing people together, or finding out whether there is interest in more sessions?
 
-## Turno 2
+## Turn 2
 
-**Utente:** Ti do qualche elemento in più: inizialmente pensavo di ricavarci un piccolo guadagno. So fare orli e cucire bottoni, ma non usare macchine avanzate. Posso contattare otto conoscenti principianti. Nessuno ha ancora detto che pagherebbe. Ho quattro ore complessive per prepararlo.
+**User:** A bit more information: at first I was thinking of making a small profit. I can hem and sew on buttons, but I can't use advanced machines. I can contact eight beginner acquaintances. Nobody has said yet that they would pay. I have four hours in total to prepare it.
 
-**Assistente:**
+**Assistant:**
 
-Il punto da verificare è se qualcuno pagherebbe: gli otto conoscenti sono possibili partecipanti, ma non abbiamo ancora una conferma di interesse a pagamento. Con quattro ore di preparazione, terrei l’idea su bottoni e piccoli orli a mano, che sai già fare.
+The thing to check is whether anyone would pay: the eight acquaintances are possible participants, but we don't yet have confirmation that they're interested at a price. With four hours of preparation, I'd keep the idea to buttons and small hand hems, which you already know how to do.
 
-Quale guadagno minimo, tolte tutte le spese, renderebbe per te utile organizzarlo?
+What is the minimum profit, after all expenses, that would make it worth organizing for you?
 
-## Turno 3
+## Turn 3
 
-**Utente:** Ho cambiato priorità: il guadagno non mi interessa più per questa prima prova. Voglio capire se mi piace insegnare e se i partecipanti imparano una riparazione utile. Posso usare gratuitamente la sala del condominio, con sei posti. Non voglio acquistare macchine.
+**User:** I've changed priorities: profit no longer matters for this first trial. I want to find out whether I enjoy teaching and whether the participants learn a useful repair. I can use the building's common room for free, with six seats. I don't want to buy machines.
 
-**Assistente:**
+**Assistant:**
 
-Ora sono chiari due obiettivi: capire se ti piace insegnare e verificare che i partecipanti imparino una riparazione utile. La sala gratuita e il lavoro a mano rendono plausibile una piccola prova entro i tuoi vincoli; resta da verificare l’adesione.
+Two goals are now clear: finding out whether you enjoy teaching and checking that participants learn a useful repair. The free room and hand-sewing make a small trial plausible within your constraints; what remains to be verified is whether people will sign up.
 
-Partirei dal cucire un bottone: è una riparazione circoscritta e ogni partecipante può provare a farla da solo.
+I'd start with sewing on a button: it's a contained repair and each participant can try it on their own.
 
-Quante delle quattro ore di preparazione sei disposto a usare per seguire una persona in una breve prova d’insegnamento prima del workshop?
+How many of your four preparation hours are you willing to spend coaching one person through a short teaching rehearsal before the workshop?
 
-## Turno 4
+## Turn 4
 
-**Utente:** Un conoscente dice che sei posti si riempiranno sicuramente. Però non ho ricevuto conferme. Non so ancora quale riparazione interessi di più ai principianti. Non vorrei inventarmi questa risposta.
+**User:** An acquaintance says the six seats will definitely fill up. But I haven't received any confirmations. I don't yet know which repair beginners are most interested in. I wouldn't want to make up that answer.
 
-**Assistente:**
+**Assistant:**
 
-Il tuo conoscente fa una previsione, ma senza conferme non sappiamo se i sei posti si riempiranno. E non serve indovinare quale riparazione interessi: possiamo chiederlo agli otto conoscenti, limitando la scelta a ciò che sai insegnare.
+Your acquaintance is making a prediction, but without confirmations we don't know whether the six seats will fill. And you don't need to guess which repair is of most interest: we can ask the eight acquaintances, limiting the choice to what you can teach.
 
-Quale giorno e fascia oraria potresti proporre nelle prossime due settimane? Un invito concreto permetterà di verificare insieme interesse e disponibilità.
+What day and time slot could you propose within the next two weeks? A concrete invitation will let us check interest and availability together.
 
-## Turno 5
+## Turn 5
 
-**Utente:** Ho chiesto: quattro persone hanno confermato che parteciperebbero gratuitamente e vorrebbero imparare a cucire un bottone. Per me basta fare la prova con loro. Basta domande: dimmi cosa consigli e perché, senza prenotare nulla.
+**User:** I asked: four people have confirmed that they would attend for free and would like to learn to sew on a button. For me, running the trial with them is enough. No more questions: tell me what you recommend and why, without booking anything.
 
-**Assistente:**
+**Assistant:**
 
-Ti consiglio di fare la prova con le quattro persone confermate, concentrandoti solo su **cucire un bottone a mano**.
+I recommend running the trial with the four confirmed people, focusing only on **sewing on a button by hand**.
 
-Vale la pena perché hai una richiesta concreta, sai già eseguire la riparazione e disponi di una sala gratuita. Quattro partecipanti sono sufficienti per capire se ti piace insegnare e per seguire ciascuno mentre prova.
+It's worth it because you have a concrete request, you already know how to do the repair, and you have a free room. Four participants are enough to find out whether you enjoy teaching and to follow each person as they try.
 
-Organizzerei così:
+I'd organize it like this:
 
-1. **Un incontro di 60–75 minuti:** breve dimostrazione, pratica guidata e un secondo tentativo autonomo.
-2. **Materiali semplici:** chiedi di portare un capo con un bottone da ricucire, oppure un ritaglio di tessuto e un bottone. Verifica di avere aghi, filo e forbici da condividere.
-3. **Spesa massima di 30 euro**, solo se mancano materiali essenziali. Non serve usare tutti i 300 euro né acquistare macchine.
-4. **Una verifica concreta:** alla fine ciascuno prova a cucire un bottone senza il tuo intervento e controlla che tenga e passi nell’asola.
-5. **Una breve valutazione tua:** dopo l’incontro annota se ti è piaciuto spiegare, cosa ti ha affaticato e se vorresti ripeterlo.
+1. **One 60–75 minute session:** a short demonstration, guided practice, and a second attempt on their own.
+2. **Simple materials:** ask everyone to bring a garment with a button to re-sew, or a scrap of fabric and a button. Check that you have needles, thread, and scissors to share.
+3. **A maximum spend of 30 euros**, only if essential materials are missing. There's no need to use all 300 euros or to buy machines.
+4. **One concrete check:** at the end, each person sews on a button without your help, and checks that it holds and fits through the buttonhole.
+5. **A short evaluation of your own:** after the session, note whether you enjoyed explaining, what tired you, and whether you'd want to do it again.
 
-Per restare nelle quattro ore di preparazione, evita dispense elaborate: prova una volta la spiegazione, prepara i materiali e tieni un margine per gli imprevisti.
+To stay within the four hours of preparation, avoid elaborate handouts: rehearse the explanation once, prepare the materials, and leave a margin for the unexpected.
 
-Il risultato da cercare è semplice: tu scopri come ti trovi a insegnare e loro tornano a casa sapendo fare una riparazione utile. Le condizioni attuali bastano per provarci.
+The result to look for is simple: you find out how you feel about teaching, and they go home knowing how to do a useful repair. The current conditions are enough to give it a try.
 
-## Turno 6
+## Turn 6
 
-**Utente:** Riassumi la decisione in massimo cinque punti. Distingui ciò che abbiamo deciso dalle ipotesi ancora da verificare. Non farmi altre domande.
+**User:** Summarize the decision in at most five points. Separate what we decided from the hypotheses still to be verified. Don't ask me any more questions.
 
-**Assistente:**
+**Assistant:**
 
-- **Deciso:** fare una prima prova gratuita con quattro persone che hanno confermato, per capire se ti piace insegnare e se imparano una riparazione utile.
-- **Deciso:** concentrarsi sul cucire un bottone a mano, nella sala condominiale gratuita, senza acquistare macchine.
-- **Vincoli:** organizzare entro due settimane, con massimo quattro ore di preparazione e 300 euro disponibili. Nessuna prenotazione o acquisto effettuato.
-- **Da verificare:** che le quattro persone partecipino effettivamente e riescano, alla fine, a cucire un bottone in autonomia.
-- **Da verificare:** se insegnare ti piace abbastanza da voler ripetere l’esperienza. Durata di 60–75 minuti e tetto di spesa di 30 euro restano proposte, non decisioni confermate.
+- **Decided:** run a first free trial with the four people who confirmed, to find out whether you enjoy teaching and whether they learn a useful repair.
+- **Decided:** focus on sewing on a button by hand, in the free common room, without buying machines.
+- **Constraints:** organize it within two weeks, with at most four hours of preparation and 300 euros available. No bookings or purchases made.
+- **To verify:** that the four people actually attend and manage, by the end, to sew on a button on their own.
+- **To verify:** whether you enjoy teaching enough to want to repeat the experience. The 60–75 minute length and the 30-euro spending cap remain proposals, not confirmed decisions.

@@ -20,7 +20,7 @@ The instructions live in one editable [SKILL.md](skills/assertive-clarity/SKILL.
 
 > I don't have enough information to recommend either. What is the most important difference between the two offers for you?
 
-One question you can answer in ten seconds, instead of a form. Codex, GPT-6.1 Sol, medium reasoning, one run per condition; the run was in Italian and is translated here.
+One question you can answer in ten seconds, instead of a form. Codex, GPT-6.1 Sol, medium reasoning, one run per condition. The run was conducted in Italian; the answers above are an English translation.
 
 ## Install
 
@@ -61,7 +61,7 @@ The user later changed the goal from making money to trying teaching. After they
 
 That is the interaction this skill aims for: understand what matters, then help you decide.
 
-[Read all six turns](examples/workshop.md). The session was conducted in Italian; the question above is translated. It is one controlled example, not a promise about every conversation.
+[Read all six turns](examples/workshop.md). The session was conducted in Italian; the transcript is an English translation. It is one controlled example, not a promise about every conversation.
 
 ## When to use it
 
