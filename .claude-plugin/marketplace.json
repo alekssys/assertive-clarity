@@ -1,0 +1,11 @@
+{
+  "name": "alekssys-skills",
+  "owner": { "name": "Aleks" },
+  "plugins": [
+    {
+      "name": "assertive-clarity",
+      "source": "./",
+      "description": "Clear answers, focused questions, and the nerve to challenge your assumptions."
+    }
+  ]
+}
